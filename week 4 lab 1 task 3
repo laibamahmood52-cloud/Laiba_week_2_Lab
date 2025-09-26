@@ -1,0 +1,17 @@
+count = 0 
+
+def increment():
+    global count
+    count += 1
+    print("Inside increment():", count)
+
+def show_count():
+    print("Inside show_count():", count)
+
+
+print("Outside (initial):", count)
+increment()
+show_count()
+print("Outside (final):", count)
+
+
